@@ -1,13 +1,17 @@
+# MIT License： 柯博文 老師
+
 from openpyxl import Workbook     # pip install openpyxl
 import time                       # 時間
+
 
 wb = Workbook()                   # 初始化
 sheet = wb.active                 # 新增一個工作欄
 
 sheet['A1'] = 87                  # 設定資料   A1
-sheet['A2'] = "Devansh"
+sheet['A2'] = "Powen Ko"
 sheet['A3'] = 41.80
 sheet['A4'] = 10
+sheet['A6'] = "柯博文老師"
 
 now = time.strftime("%x")        # 取得 現在的時間
 sheet['A5'] = now
